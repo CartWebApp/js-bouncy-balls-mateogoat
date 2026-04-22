@@ -10,7 +10,8 @@ const height = canvas.height = window.innerHeight;
 
 function random(min, max) {
   const num = Math.floor(Math.random() * (max - min + 1)) + min;
-  return num;}
+  return num;
+}
 
   function Ball(x, y, velX, velY, color, size) {
     this.x = y;
@@ -52,7 +53,7 @@ function random(min, max) {
 
   let balls = [];
 
-  while (balls.length < 25) {
+  while (balls.length < 50) {
     let size = random(10, 20);
     let ball = new Ball(
       random(0 + size, width - size),
